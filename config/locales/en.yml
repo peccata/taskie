@@ -6,6 +6,7 @@ en:
     buttons:
       cancel: cancel
       post: Post
+    comment: Comment
     comment_html: "%{user} wrote %{time} ago"
     delete: delete
     edit: edit
@@ -22,26 +23,26 @@ en:
     distance_in_words:
       about_x_hours:
         one: about 1 hour
-        other: about %{count} hours
+        other: "about %{count} hours"
       about_x_months:
         one: about 1 month
-        other: about %{count} months
+        other: "about %{count} months"
       about_x_years:
         one: about 1 year
-        other: about %{count} years
+        other: "about %{count} years"
       almost_x_years:
         one: almost 1 year
-        other: almost %{count} years
+        other: "almost %{count} years"
       half_a_minute: half a minute
       less_than_x_minutes:
         one: less than a minute
-        other: less than %{count} minutes
+        other: "less than %{count} minutes"
       less_than_x_seconds:
         one: less than 1 second
-        other: less than %{count} seconds
+        other: "less than %{count} seconds"
       over_x_years:
         one: over 1 year
-        other: over %{count} years
+        other: "over %{count} years"
       x_days:
         one: 1 day
         other: "%{count} days"
@@ -76,7 +77,10 @@ en:
     projects: Projects
     settings: Settings
   project:
+    create_project: Create project
+    delete: Delete
     details: Details
+    edit: Edit
     name: Name
     owner: Owner
     participants: Participants
@@ -87,14 +91,24 @@ en:
     tasks_per_page: Tasks per page
     time_zone: Time zone
   tasks:
-    assigned_to: ", assigned to %{user}"
+    active: active
+    activity:
+      before: Before
+      changed_status_html: "changed status to %{status}"
+      somehow_updated: somehow updated
+      time_ago_html: "%{time} ago"
+      updated: updated
+    assigned_html: ", assigned to %{user}"
+    assigned_to_html: "assigned to %{user}"
     buttons:
       delete: Delete
       edit: Edit
       follow: Follow
       new_task: New task
       unfollow: Unfollow
-    created_html: created %{time} ago
+    completed: completed
+    created_by_html: "created by %{user} %{time} ago"
+    created_html: "created %{time} ago"
     form:
       assign_to: Assign to
       details: Details
@@ -118,5 +132,8 @@ en:
     tasks: Tasks
   views:
     pagination:
-      previous: "&lt;"
+      first: First
+      last: Last
       next: "&gt;"
+      previous: "&lt;"
+      truncate: "..."

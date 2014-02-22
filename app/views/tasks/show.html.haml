@@ -32,8 +32,7 @@
       .pull-right.text-right
         %div= priority_badge @task
         %div
-          = t("tasks.assigned_to")
-          = user_with_gravatar @task.assignee
+          = t("tasks.assigned_html", user: user_with_gravatar(@task.assignee))
 
 %blockquote.blockquote-primary.task-details
   %small
